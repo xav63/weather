@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100&family=Signika:wght@600&display=swap" rel="stylesheet">
+    <title>Weather</title>
+</head>
+<body>
+    <header>
+      <nav>
+        <a href="index.html" class="nav-icon" aria-label="page d'accueil" aria-current="page"><img src="assets/images/clock-regular.svg" alt="icone horloge">
+          <span>Weather</span>
+        </a>
+        <div class="main-nav-links">
+          <button class="hamburger" type="button" aria-label="Toggle Navigation"
+          aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navlinks-container">
+            <a href="index.html" aria-current="page">Accueil</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+
+        <div class="nav-authentication">
+          <a href="#" class="sign-user" aria-label="Sign in page">
+            <img src="assets/images/user-solid.svg" alt="user icon">
+          </a>
+          <div class="sign-btns">
+            <button type="button">Connexion</button>
+            <button type="button">Déconnexion</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="contact-container">
+        <h1>Formulaire de contact</h1>
+        <form action="/action_page.php">
+          <label for="fname">Nom & prénom</label>
+          <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+      
+          <label for="sujet">Sujet</label>
+          <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+      
+          <label for="emailAddress">Email</label>
+          <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+      
+      
+          <label for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+      
+          <input type="submit" value="Envoyer">
+        </form>
+      </div>
+        
+      
+    <!-- JS  -->
+    <script src="assets/js/script.js"></script>    
+</body>
+</html>

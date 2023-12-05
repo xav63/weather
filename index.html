@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    
+    <title>Weather</title>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#" class="nav-icon" aria-label="page d'accueil" aria-current="page"><img src="assets/images/umbrella-solid.svg" alt="icone horloge">
+        <span>Weather</span>
+      </a>
+      <div class="main-nav-links">
+        <button class="hamburger" type="button" aria-label="Toggle Navigation"
+        aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navlinks-container">
+          <a href="index.html" aria-current="page">Accueil</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <!-- <div class="nav-authentication">
+        <a href="#" class="sign-user" aria-label="Sign in page">
+          <img src="assets/images/user-solid.svg" alt="user icon">
+        </a>
+        <div class="sign-btns">
+          <button type="button">Connexion</button>
+          <button type="button">Déconnexion</button>
+        </div>
+      </div> -->
+    </nav>
+  </header>
+    
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Renseigner la ville" spellcheck="false">
+        <button><img src="assets/images/search.png" alt="icone loupe"></button>
+      </div>
+      <div class="error">
+        <p>Nom de la ville incorrect</p>
+      </div>
+      <div class="weather">
+        <img src="assets/images/rain.png" alt="pluie" class="weather-icon">
+        <h1 class="temp">22°c</h1>
+        <h2 class="city">New York</h2>
+        <div class="details">
+          <div class="col">
+            <img src="assets/images/humidity.png" alt="image">
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidité</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="assets/images/wind.png" alt="image">
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Vitesse du vent</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- JS  -->
+    <script src="assets/js/script.js"></script>    
+</body>
+</html>
